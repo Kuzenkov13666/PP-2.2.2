@@ -3,7 +3,10 @@ package web.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.RequestMapping;
+=======
+>>>>>>> 43d3827 (Initial commit)
 
 import java.util.ArrayList;
 import java.util.List;

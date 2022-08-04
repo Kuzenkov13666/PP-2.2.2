@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Table</title>
+    <style type="text/css">
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 70%;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid #000000;
+            border-right: 1px solid #030000;
+        }
+
+        th {
+            background-color: #790676;
+
+        }
+    </style>
+</head>
+<body>
+<h1>Cars Table</h1>
+<br><br><br><br><br>
+<table>
+    <thead>
+    <tr>
+        <th>Model</th>
+        <th>Series</th>
+        <th>State Number</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="car : ${cars}">
+        <td th:text="${car.model}"></td>
+        <td th:text="${car.series}"></td>
+        <td th:text="${car.stateNumber}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+<a href="/">Hello</a>
+<br><br>
+<a href="/cars?count=1">count 1</a>
+
+<a href="/cars?count=2">  2</a>
+
+<a href="/cars?count=3">  3</a>
+
+<a href="/cars?count=4">  4</a>
+
+<a href="/cars?count=5">  5</a>
+
+
